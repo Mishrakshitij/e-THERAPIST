@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "e-therapist"
+version = "1.0.0"
+description = "PsyCon dialogue modeling with supervised learning and natural language policy optimization"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.24,<3", "torch>=2.2,<3", "transformers>=4.46,<6", "PyYAML>=6,<7", "safetensors>=0.4"]
+
+[project.optional-dependencies]
+metrics = ["bert-score>=0.3.13,<0.4"]
+dev = ["ruff>=0.8", "pytest>=8,<10"]
+
+[project.scripts]
+e-therapist = "e_therapist.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

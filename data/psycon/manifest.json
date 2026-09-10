@@ -1,0 +1,124 @@
+{
+  "dataset": "PSYCON",
+  "corpus": "primary",
+  "schema_version": "1.1.0",
+  "data_file": "psycon.csv",
+  "split_file": "splits.json",
+  "stats_file": "stats.json",
+  "conversation_id_column": "conversation_id",
+  "turn_id_column": "turn_id",
+  "conversation_id_format": "source-original_id (psycon-NNN or combined-NNN)",
+  "missing_value": "empty CSV cell",
+  "columns": [
+    "conversation_id",
+    "turn_id",
+    "speaker",
+    "utterance",
+    "issue",
+    "gender",
+    "age",
+    "persona",
+    "sentiment",
+    "ipc",
+    "politeness",
+    "approach"
+  ],
+  "label_vocabularies": {
+    "gender_age": [
+      "female_young",
+      "female_adult",
+      "female_elder",
+      "male_young",
+      "male_adult",
+      "male_elder"
+    ],
+    "persona": [
+      "openness",
+      "conscientiousness",
+      "extraversion",
+      "agreeableness",
+      "neuroticism"
+    ],
+    "sentiment": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "approach": [
+      "directive",
+      "non_directive",
+      "eclectic"
+    ],
+    "politeness": [
+      "impolite",
+      "moderately_polite",
+      "polite"
+    ],
+    "ipc": [
+      "confrontational",
+      "imposing",
+      "dissatisfied",
+      "uncertain",
+      "compliant",
+      "helpful",
+      "understanding",
+      "empathetic",
+      "directing"
+    ]
+  },
+  "split_seed": 10,
+  "categorical_column_vocabularies": {
+    "speaker": [
+      "patient",
+      "therapist"
+    ],
+    "issue": [
+      "anxiety",
+      "bipolar_disorder",
+      "depression",
+      "disruptive_behaviour_and_dissocial_disorders",
+      "ptsd",
+      "schizophrenia",
+      "stress"
+    ],
+    "gender": [
+      "female",
+      "male"
+    ],
+    "age": [
+      "young",
+      "adult",
+      "elder"
+    ]
+  },
+  "split_ratios": {
+    "train": 0.8,
+    "validation": 0.1,
+    "test": 0.1
+  },
+  "split_unit": "conversation",
+  "stratification_column": "approach",
+  "duplicate_transcripts_share_split": true,
+  "shared_informative_openings_share_split": true,
+  "informative_opening_min_words": 25,
+  "conversations": 1020,
+  "turns": 19676,
+  "source_conversations": {
+    "combined": 677,
+    "psycon": 343
+  },
+  "files": {
+    "psycon.csv": {
+      "sha256": "11ba9ec6b7e2718a590c19153a517b3434f05cfaa0da19f19164da1eca019bb7",
+      "bytes": 4216004
+    },
+    "splits.json": {
+      "sha256": "01f453c8f8d05a0a9bb5ef1a4d608e164ac0459df3afc2551cef8e8818ac6504",
+      "bytes": 19772
+    },
+    "stats.json": {
+      "sha256": "b2a8de49dcd6959869080a1e7781dd0b0ecbb8888d703a8ff2297ff88a315a87",
+      "bytes": 2453
+    }
+  }
+}

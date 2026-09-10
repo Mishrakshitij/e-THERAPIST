@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+runs/
+checkpoints/
+.cache/
+.local/
+.agents/
+.codex/
+Copy of Psycon_s - Psycon_s.csv
+src/combined_conversations_cleaned - combined_conversations_cleaned.csv
+*.log
+.env
+.env.*
+!*.example

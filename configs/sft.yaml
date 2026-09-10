@@ -1,0 +1,15 @@
+seed: 10
+data: data/psycon/psycon.csv
+splits: data/psycon/splits.json
+model: openai-community/gpt2-medium
+output: runs/sft
+device: auto
+context_window: 4
+max_length: 512
+max_response_length: 50
+batch_size: 8
+gradient_accumulation: 4
+epochs: 20
+learning_rate: 0.00002
+weight_decay: 0.01
+max_grad_norm: 1.0

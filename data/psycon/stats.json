@@ -1,0 +1,114 @@
+{
+  "conversations": 1020,
+  "turns": 19676,
+  "nonempty_turns": 19674,
+  "empty_turns": 2,
+  "speakers": {
+    "patient": 9706,
+    "therapist": 9970
+  },
+  "duplicate_transcript_groups": 9,
+  "dialogue_labels": {
+    "issue": {
+      "anxiety": 131,
+      "bipolar_disorder": 62,
+      "depression": 79,
+      "disruptive_behaviour_and_dissocial_disorders": 43,
+      "ptsd": 64,
+      "schizophrenia": 60,
+      "stress": 16
+    },
+    "gender": {
+      "female": 167,
+      "male": 178
+    },
+    "age": {
+      "adult": 118,
+      "elder": 112,
+      "young": 115
+    },
+    "gender_age": {
+      "female_adult": 55,
+      "female_elder": 55,
+      "female_young": 55,
+      "male_adult": 61,
+      "male_elder": 57,
+      "male_young": 60
+    },
+    "persona": {
+      "agreeableness": 68,
+      "conscientiousness": 70,
+      "extraversion": 68,
+      "neuroticism": 69,
+      "openness": 68
+    },
+    "approach": {
+      "directive": 863,
+      "eclectic": 16,
+      "non_directive": 54
+    }
+  },
+  "turn_labels": {
+    "sentiment": {
+      "negative": 3866,
+      "neutral": 2428,
+      "positive": 3412
+    },
+    "politeness": {
+      "impolite": 91,
+      "moderately_polite": 5059,
+      "polite": 4818
+    },
+    "ipc": {
+      "compliant": 1215,
+      "confrontational": 35,
+      "directing": 2045,
+      "dissatisfied": 54,
+      "empathetic": 981,
+      "helpful": 3590,
+      "imposing": 24,
+      "uncertain": 227,
+      "understanding": 1797
+    }
+  },
+  "missing_labels": {
+    "issue_conversations": 565,
+    "gender_conversations": 675,
+    "age_conversations": 675,
+    "gender_age_conversations": 677,
+    "persona_conversations": 677,
+    "approach_conversations": 87,
+    "sentiment_nonempty_patient_turns": 0,
+    "politeness_nonempty_therapist_turns": 0,
+    "ipc_nonempty_therapist_turns": 0
+  },
+  "generation_examples": 9529,
+  "classifier_examples": {
+    "gender_age": 4574,
+    "persona": 4574,
+    "sentiment": 9706,
+    "approach": 8908,
+    "politeness": 9529,
+    "ipc": 9529
+  },
+  "splits": {
+    "train": {
+      "conversations": 816,
+      "turns": 15509,
+      "nonempty_turns": 15507,
+      "generation_examples": 7515
+    },
+    "validation": {
+      "conversations": 102,
+      "turns": 2093,
+      "nonempty_turns": 2093,
+      "generation_examples": 1014
+    },
+    "test": {
+      "conversations": 102,
+      "turns": 2074,
+      "nonempty_turns": 2074,
+      "generation_examples": 1000
+    }
+  }
+}

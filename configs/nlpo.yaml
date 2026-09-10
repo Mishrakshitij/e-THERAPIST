@@ -1,0 +1,38 @@
+seed: 10
+data: data/psycon/psycon.csv
+splits: data/psycon/splits.json
+model: runs/sft/best
+output: runs/nlpo
+classifiers: runs/classifiers
+device: auto
+reward_device: cpu
+bertscore_model: FacebookAI/roberta-large
+context_window: 4
+max_length: 512
+max_response_length: 50
+batch_size: 8
+learning_rate: 0.00002
+weight_decay: 0.01
+max_grad_norm: 1.0
+total_rollouts: 32000
+rollouts_per_update: 640
+candidates: 3
+ppo_epochs: 20
+clip_range: 0.2
+value_clip_range: 0.2
+value_coefficient: 0.5
+entropy_coefficient: 0.0
+gamma: 0.95
+gae_lambda: 0.95
+kl_coefficient: 0.1
+kl_target: 6.0
+kl_horizon: 10000
+top_p: 0.9
+top_k: 20
+mask_refresh_updates: 1
+reward_convention: paper
+missing_attribute_policy: mask
+alpha: 1.0
+attribute_weights: [0.1, 0.2, 0.2, 0.2, 0.3]
+quality_weights: [0.5, 0.5]
+mix_weights: [0.75, 0.25]

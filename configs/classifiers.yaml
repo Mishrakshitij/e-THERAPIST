@@ -1,0 +1,12 @@
+seed: 10
+data: data/psycon/psycon.csv
+splits: data/psycon/splits.json
+model: FacebookAI/roberta-large
+output: runs/classifiers
+device: auto
+max_length: 512
+batch_size: 8
+epochs: 20
+learning_rate: 0.00002
+weight_decay: 0.01
+max_grad_norm: 1.0
